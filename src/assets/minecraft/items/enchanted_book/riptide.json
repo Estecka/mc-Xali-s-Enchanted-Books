@@ -1,0 +1,16 @@
+{
+	"model": {
+		"type": "model",
+		"model": "minecraft:item/enchanted_book/riptide",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "minecraft:item/enchanted_book/riptide" },
+			"entries": [
+				{ "threshold": 3, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/riptide3" } },
+				{ "threshold": 2, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/riptide2" } },
+				{ "threshold": 1, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/riptide1" } }
+			]
+		}
+	}
+}

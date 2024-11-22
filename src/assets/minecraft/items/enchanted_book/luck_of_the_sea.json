@@ -1,0 +1,16 @@
+{
+	"model": {
+		"type": "model",
+		"model": "minecraft:item/enchanted_book/luck_of_the_sea",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "minecraft:item/enchanted_book/luck_of_the_sea" },
+			"entries": [
+				{ "threshold": 3, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/luck_of_the_sea3" } },
+				{ "threshold": 2, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/luck_of_the_sea2" } },
+				{ "threshold": 1, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/luck_of_the_sea1" } }
+			]
+		}
+	}
+}

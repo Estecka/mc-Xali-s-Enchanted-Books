@@ -1,0 +1,20 @@
+{
+	"model": {
+		"type": "model",
+		"model": "illagers_plus:item/enchanted_book/illagers_bane",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "illagers_plus:item/enchanted_book/illagers_bane" },
+			"entries": [
+				{ "threshold": 7, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane7" } },
+				{ "threshold": 6, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane6" } },
+				{ "threshold": 5, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane5" } },
+				{ "threshold": 4, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane4" } },
+				{ "threshold": 3, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane3" } },
+				{ "threshold": 2, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane2" } },
+				{ "threshold": 1, "model": { "type": "model", "model": "illagers_plus:item/enchanted_book_levels/illagers_bane1" } }
+			]
+		}
+	}
+}
