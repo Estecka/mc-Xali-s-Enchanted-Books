@@ -1,17 +1,17 @@
 {
-  "parent": "item/enchanted_book_levels/sweeping1",
+  "parent": "item/enchanted_book_levels/sweeping_edge1",
   "overrides": [
     {
       "predicate": {
         "level": 2
       },
-      "model": "item/enchanted_book_levels/sweeping2"
+      "model": "item/enchanted_book_levels/sweeping_edge2"
     },
     {
       "predicate": {
         "level": 3
       },
-      "model": "item/enchanted_book_levels/sweeping3"
+      "model": "item/enchanted_book_levels/sweeping_edge3"
     }
   ]
 }
