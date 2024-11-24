@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "enchantedshulkers:item/enchanted_book/siphon"
+		"model": "enchantedshulkers:item/enchanted_book/siphon",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "enchantedshulkers:item/enchanted_book/siphon" },
+			"variants-cit:baseId":"enchantedshulkers:item/enchanted_book_levels/siphon",
+			"entries": []
+		}
 	}
 }

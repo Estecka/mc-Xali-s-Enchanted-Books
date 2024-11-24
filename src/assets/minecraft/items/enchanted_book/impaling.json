@@ -6,13 +6,8 @@
 			"type": "range_dispatch",
 			"property": "variants-cit:stored_enchantment_level",
 			"fallback": { "type": "model", "model": "minecraft:item/enchanted_book/impaling" },
-			"entries": [
-				{ "threshold": 5, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/impaling5" } },
-				{ "threshold": 4, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/impaling4" } },
-				{ "threshold": 3, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/impaling3" } },
-				{ "threshold": 2, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/impaling2" } },
-				{ "threshold": 1, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/impaling1" } }
-			]
+			"variants-cit:baseId":"minecraft:item/enchanted_book_levels/impaling",
+			"entries": []
 		}
 	}
 }

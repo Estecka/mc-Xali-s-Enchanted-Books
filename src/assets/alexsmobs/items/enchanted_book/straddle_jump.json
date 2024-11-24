@@ -6,11 +6,8 @@
 			"type": "range_dispatch",
 			"property": "variants-cit:stored_enchantment_level",
 			"fallback": { "type": "model", "model": "alexsmobs:item/enchanted_book/straddle_jump" },
-			"entries": [
-				{ "threshold": 3, "model": { "type": "model", "model": "alexsmobs:item/enchanted_book_levels/straddle_jump3" } },
-				{ "threshold": 2, "model": { "type": "model", "model": "alexsmobs:item/enchanted_book_levels/straddle_jump2" } },
-				{ "threshold": 1, "model": { "type": "model", "model": "alexsmobs:item/enchanted_book_levels/straddle_jump1" } }
-			]
+			"variants-cit:baseId":"alexsmobs:item/enchanted_book_levels/straddle_jump",
+			"entries": []
 		}
 	}
 }

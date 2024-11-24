@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "veinmining:item/enchanted_book/vein_mining"
+		"model": "veinmining:item/enchanted_book/vein_mining",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "veinmining:item/enchanted_book/vein_mining" },
+			"variants-cit:baseId":"veinmining:item/enchanted_book_levels/vein_mining",
+			"entries": []
+		}
 	}
 }

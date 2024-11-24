@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "enchantedshulkers:item/enchanted_book/refill"
+		"model": "enchantedshulkers:item/enchanted_book/refill",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "enchantedshulkers:item/enchanted_book/refill" },
+			"variants-cit:baseId":"enchantedshulkers:item/enchanted_book_levels/refill",
+			"entries": []
+		}
 	}
 }

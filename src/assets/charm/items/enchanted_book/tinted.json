@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "charm:item/enchanted_book/tinted"
+		"model": "charm:item/enchanted_book/tinted",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "charm:item/enchanted_book/tinted" },
+			"variants-cit:baseId":"charm:item/enchanted_book_levels/tinted",
+			"entries": []
+		}
 	}
 }

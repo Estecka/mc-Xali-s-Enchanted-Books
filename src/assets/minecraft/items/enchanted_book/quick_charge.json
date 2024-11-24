@@ -6,11 +6,8 @@
 			"type": "range_dispatch",
 			"property": "variants-cit:stored_enchantment_level",
 			"fallback": { "type": "model", "model": "minecraft:item/enchanted_book/quick_charge" },
-			"entries": [
-				{ "threshold": 3, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/quick_charge3" } },
-				{ "threshold": 2, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/quick_charge2" } },
-				{ "threshold": 1, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/quick_charge1" } }
-			]
+			"variants-cit:baseId":"minecraft:item/enchanted_book_levels/quick_charge",
+			"entries": []
 		}
 	}
 }

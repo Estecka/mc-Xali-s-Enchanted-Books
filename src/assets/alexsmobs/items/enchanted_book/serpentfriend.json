@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "alexsmobs:item/enchanted_book/serpentfriend"
+		"model": "alexsmobs:item/enchanted_book/serpentfriend",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "alexsmobs:item/enchanted_book/serpentfriend" },
+			"variants-cit:baseId":"alexsmobs:item/enchanted_book_levels/serpentfriend",
+			"entries": []
+		}
 	}
 }

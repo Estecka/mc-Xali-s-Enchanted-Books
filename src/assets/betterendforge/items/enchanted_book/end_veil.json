@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "betterendforge:item/enchanted_book/end_veil"
+		"model": "betterendforge:item/enchanted_book/end_veil",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "betterendforge:item/enchanted_book/end_veil" },
+			"variants-cit:baseId":"betterendforge:item/enchanted_book_levels/end_veil",
+			"entries": []
+		}
 	}
 }

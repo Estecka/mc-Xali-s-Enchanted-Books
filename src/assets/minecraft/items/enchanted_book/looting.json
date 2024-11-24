@@ -6,11 +6,8 @@
 			"type": "range_dispatch",
 			"property": "variants-cit:stored_enchantment_level",
 			"fallback": { "type": "model", "model": "minecraft:item/enchanted_book/looting" },
-			"entries": [
-				{ "threshold": 3, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/looting3" } },
-				{ "threshold": 2, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/looting2" } },
-				{ "threshold": 1, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/looting1" } }
-			]
+			"variants-cit:baseId":"minecraft:item/enchanted_book_levels/looting",
+			"entries": []
 		}
 	}
 }

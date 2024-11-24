@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "charm:item/enchanted_book/acquisition"
+		"model": "charm:item/enchanted_book/acquisition",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "charm:item/enchanted_book/acquisition" },
+			"variants-cit:baseId":"charm:item/enchanted_book_levels/acquisition",
+			"entries": []
+		}
 	}
 }

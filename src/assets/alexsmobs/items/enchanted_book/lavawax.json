@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "alexsmobs:item/enchanted_book/lavawax"
+		"model": "alexsmobs:item/enchanted_book/lavawax",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "alexsmobs:item/enchanted_book/lavawax" },
+			"variants-cit:baseId":"alexsmobs:item/enchanted_book_levels/lavawax",
+			"entries": []
+		}
 	}
 }

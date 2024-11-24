@@ -6,10 +6,8 @@
 			"type": "range_dispatch",
 			"property": "variants-cit:stored_enchantment_level",
 			"fallback": { "type": "model", "model": "minecraft:item/enchanted_book/fire_aspect" },
-			"entries": [
-				{ "threshold": 2, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/fire_aspect2" } },
-				{ "threshold": 1, "model": { "type": "model", "model": "minecraft:item/enchanted_book_levels/fire_aspect1" } }
-			]
+			"variants-cit:baseId":"minecraft:item/enchanted_book_levels/fire_aspect",
+			"entries": []
 		}
 	}
 }

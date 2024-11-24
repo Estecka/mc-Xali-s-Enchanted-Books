@@ -1,6 +1,13 @@
 {
 	"model": {
 		"type": "model",
-		"model": "charm:item/enchanted_book/aerial_affinity"
+		"model": "charm:item/enchanted_book/aerial_affinity",
+		"variants-cit:override": {
+			"type": "range_dispatch",
+			"property": "variants-cit:stored_enchantment_level",
+			"fallback": { "type": "model", "model": "charm:item/enchanted_book/aerial_affinity" },
+			"variants-cit:baseId":"charm:item/enchanted_book_levels/aerial_affinity",
+			"entries": []
+		}
 	}
 }
